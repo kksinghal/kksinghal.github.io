@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>SS</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+        <meta property="og:image" content="https://kksinghal.github.io/ss/img/rays_square.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="682">
+        <meta property="og:image:height" content="682">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kksinghal.github.io/ss/"/>
+        <meta property="og:title" content="ss" />
+        <meta property="og:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
+    
+            <!--TWITTER-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="mip-NeRF" />
+        <meta name="twitter:description" content="Project page for: Transfer Learning approach to multi-targeted Audio-Visual Navigation" />
+        <meta name="twitter:image" content="https://kksinghal.github.io/ss/img/rays_square.png" />
+    
+    
+    <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+      <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+        <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Multi-Sense-Rescuer</b>: Multi-Target Audio-Visual Learning <br> and Navigation in Search and Rescue Scenarios
+                <br>
+                <small>
+                    IROS Learning Robot Super Autonomy Workshop 2023 <br>
+                    Under Review at ICRA 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://kksinghal.github.io/">
+                          <b>Kartik Singhal</b>
+                        </a>
+                        </br>IIIT Delhi
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mehdi-yaghouti-a35777231">
+                            Mehdi Yaghouti
+                        </a>
+                        </br>University of South Carolina
+                    </li>
+                    <li>
+                        <a href="https://pooyanjamshidi.github.io/">
+                          Pooyan Jamshidi
+                        </a>
+                        </br>University of South Carolina
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1-PiJQ5RuP4PTR1eyCCFEA7Px61QtXerf/view">
+                            <image src="img/paper-img.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://youtu.be/EpH175PY1A0">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://github.com/softsys4ai/Multi-Sense-Rescuer">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <div class="text-center" style="padding-top: 3%;">
+                    <image src="img/schematic.png" class="img" style="width: 90%;" alt="overview"><br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify">
+                    In autonomous navigation, there are numerous
+                    applications in which audio plays a crucial role as an essential
+                    source of information. This study investigates the efficacy of
+                    employing transfer learning for optimal path planning through
+
+                    multiple sound-emitting destinations. This problem is challenging 
+                    due to the intricate feature extraction from mixed audio signals
+                    and combinatorial complexity inherent in multi-destination
+
+                    path planning. Expanding beyond the current reinforcement
+                    learning study for the single sound source scenario, we present
+
+                    a multi-targeted formulation and explore how effectively fine-
+                    tuning a pre-trained agent adapts its performance to the multi-
+                    sound source scenario. We provide a rigorous evaluation of
+                    our proposed multi-source approach on the widely adopted
+                    Matterport3D dataset to showcase its effectiveness. The test
+                    results underscore a notable acceleration in the training process
+                    by more than one order of magnitude.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Hypotheses
+                </h3>
+                <p class="text-justify" style="padding-top: 3%;">
+                    <b>H.1</b> Pre-trained Audio-Visual Navigation Policy in single-
+                    target scenarios transfers to multi-target scenarios. In
+                    particular, pre-training an agent on a single-target task
+                    expedites the convergence process in multi-target scenarios
+                    and leads to optimal performance in a fraction of training
+                    updates.
+                    <br>
+                    <b>H.2</b> Pre-trained Audio-Visual Navigation Policy in single-
+                    target scenarios transfers to random number of target sce-
+                    narios. Specifically, a pre-trained agent on the single target
+
+                    task generalizes to an arbitrary number of destinations in
+                    an effective manner.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <div class="text-center" style="padding-top: 3%;">
+                    <image src="img/results_table.png" class="img" style="width: 70%;" alt="overview"><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Comparision of training cost with/without transfer learning
+                </h3>
+                <div class="text-center" style="padding-top: 3%;">
+                    <image src="img/training_plots.png" class="img" style="width: 100%;" alt="overview"><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Test trajectories
+                </h3>
+                <div class="text-center" style="padding-top: 3%;">
+                    <image src="img/test_trajectories_img.png" class="img" style="width: 100%;" alt="overview"><br>
+                    <image src="img/test_trajectories_caption.png" class="img" style="width: 60%;" alt="overview"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Videos
+                </h3>
+                <br>
+                <video id="v0" width="100%" autoplay loop muted controls style="padding-top: 3%;">
+                    <source src="img/test_trajectory1.mp4" type="video/mp4" />
+                </video>
+                <br><br>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="img/test_trajectory2.mp4" type="video/mp4" />
+                </video>
+                <br><br>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="img/test_trajectory3.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    Most closely related work is <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">SoundSpaces</a> by Chen et al.                </p>
+            </div>
+        </div>
+         -->
+            
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{barron2021mipnerf,
+    title={Mip-NeRF: A Multiscale Representation 
+           for Anti-Aliasing Neural Radiance Fields},
+    author={Jonathan T. Barron and Ben Mildenhall and 
+            Matthew Tancik and Peter Hedman and 
+            Ricardo Martin-Brualla and Pratul P. Srinivasan},
+    journal={ICCV},
+    year={2021}
+}</textarea>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank the Research Computing department of University of South Carolina for providing compute support.
+                <br>
+                <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
