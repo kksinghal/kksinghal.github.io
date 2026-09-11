@@ -1,1 +1,1 @@
-This is the source code to Kartik's personal website. Template credits: https://jonbarron.info/
+This is the source code for Kartik's personal website.
